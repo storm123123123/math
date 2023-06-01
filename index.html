@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <title>high low game</title>
+  <style>
+
+  </style>
+</head>
+<body>
+  <div id="page-1" class="page">
+    <h1>The Higher or Lower Game</h1>
+    <button data-limit="10">EASY</button>
+    <button data-limit="100">NORMAL</button>
+    <button data-limit="1000">HARD</button>
+  </div>
+  
+  
+  <div id="page-2" class="page">
+      <div class="middle-section">
+      <div class="content">
+        <div id="color">
+        <p class="used">Numbers Used: <span></span></p>
+        <p class="tries">Tries: <span>0</span></p>
+        </div>
+        <h2>Guess the number between 0 and <span></span></h2>
+        <p class="response"></p>
+        <input type="number" class="input" name="input">
+        <button>Try</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+
+  <div id="stats-box">
+   
+  </div>
+  <ol id="stats">
+    <li>5 guesses: <span id="count5">0</span></li>
+    <li>6 guesses: <span id="count6">0</span></li>
+    <li>7 guesses: <span id="count7">0</span></li>
+    <li>8 guesses: <span id="count8">0</span></li>
+  </ol>  
+
+  <div id="page-3" class="page">
+    <h2>CONGRATULATIONS!<br><span>YOU WIN!</span></h2>
+    <p>It only took you... <span>0</span> tries!</p>
+    <p class="tip">Not bad... but can you beat that?</p>
+    <br>
+    <button onclick="console.log(window.location); window.location.href = window.location;">Play Again</button>
+  </div>
+</body>
+</html>
